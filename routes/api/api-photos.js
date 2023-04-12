@@ -12,7 +12,7 @@ var upload = multer ({
 const PhotoService = photoController.PhotoService;
 
 
-router.use((re, res, next)=>{
+router.use((req, res, next)=>{
 
   res.set({
   // Allow ajax access
@@ -24,7 +24,7 @@ router.use((re, res, next)=>{
   });
   if(req.method == 'OPTIONS'){
     return res.status(200).end();
-  }  
+  }
   next();
 });
 

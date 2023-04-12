@@ -1,0 +1,188 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Test",
+		"_postman_id": "e0957fb1-3c88-ad6c-50f1-8bcfaa463dd6",
+		"description": "File that includes testing instances",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/photos/",
+			"request": {
+				"url": "http://localhost:8080/api/photos/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "ajax",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "imageurl",
+							"value": "https://greekgodsandgoddesses.net/wp-content/uploads/2022/10/ajax.jpeg",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "getting all posts"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/photos/6425c09c9b6fe501ef08330c",
+			"request": {
+				"url": "http://localhost:8080/api/photos/6425c09c9b6fe501ef08330c",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "Achilles at Troy",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Achilles",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "updating a single post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/photos/6423b06d71faf611d7935542",
+			"request": {
+				"url": "http://localhost:8080/api/photos/6423b06d71faf611d7935542",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "Achilles at Troy",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Achilles",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "getting a single post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/photos/",
+			"request": {
+				"url": "http://localhost:8080/api/photos/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": " The king of the Achaeans",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Agamemnon",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "imageurl",
+							"value": "https://classicalwisdom.com/wp-content/uploads/2012/12/agamemnon.jpg",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "creating a new post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/photos/6435bcf009624bd67aebd9ac",
+			"request": {
+				"url": "http://localhost:8080/api/photos/6435bcf009624bd67aebd9ac",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": " The king of the Achaeans",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Agamemnon",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "imageurl",
+							"value": "https://classicalwisdom.com/wp-content/uploads/2012/12/agamemnon.jpg",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "deleting a post"
+			},
+			"response": []
+		}
+	]
+}
