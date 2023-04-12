@@ -1,0 +1,7 @@
+.row
+  .col-md-6.col-md-offset-3
+    p Title: #{photo.title}
+    p Description: #{photo.description}
+    img(src=photo.imageurl, width= "250")
+    form(method='POST' action="/photos/"+photo._id+"?delete=true")
+      button.btn.btn-primary(type='submit') Delete

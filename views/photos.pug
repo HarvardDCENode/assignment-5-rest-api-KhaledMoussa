@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h4 My Homeric Posts
+
+  .row
+    each photo in photos
+      .col-sm-4.bg-info
+        p Title: #{photo.title}
+        p Description: #{photo.description}
+        img(src=photo.imageurl, width= "250")
+        a(href='/photos/'+photo._id) Post Details
+        <br />
+        <br />
+        <br />
+
+
+
+
+
+
+  include newphoto

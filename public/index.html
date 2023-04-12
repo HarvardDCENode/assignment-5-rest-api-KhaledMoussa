@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Iliad</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+  <h1>The Iliad & The Odyssey</h1>
+  <p>Enter a valid user id {hint: only 'khaled' will work} to get an image of your chosen hero, then enter which hero you want. Your choices are 'achilles' or 'odysseus'.</p>
+  <form>
+    <input id="userid" placeholder="User ID: enter khaled">
+
+    <input id="hero" placeholder="Hero: achilles or odysseus?">
+    <input onclick="return findHero()" type="submit" value="Go" >
+  </form>
+
+<script>
+
+  function findHero(){
+    if(document.getElementById("userid").value=="khaled"){
+      window.location = "/static/images/"+document.getElementById('hero').value+".jpg";
+      return false;
+    }else {
+      window.location = "/static/404page.html";
+      return false;
+    }
+  }
+</script>
+
+<p>The Trojn Horse</p>
+<img src="images/horse.jpg" alt="">
+
+<p>Achilles Death by Paris's Arrow</p>
+<img src="images/achilles.jpg" alt="">
+
+<p>Odysseus's Homecoming</p>
+<img src="images/lost.jpg" alt="">
+
+
+
+</body>
+</html>
